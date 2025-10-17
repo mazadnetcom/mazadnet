@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F7F9F9;
+  --color-border-primary: #EFF3F4;
+  --color-text-primary: #0F1419;
+  --color-text-secondary: #536471;
+  --color-scrollbar-track: #F7F9F9;
+  --color-scrollbar-thumb: #D6D9DB;
+  --color-scrollbar-thumb-hover: #AAB8C2;
+}
+
+.theme-dim {
+  --color-bg-primary: #15202B;
+  --color-bg-secondary: #192734;
+  --color-border-primary: #38444D;
+  --color-text-primary: #E7E9EA;
+  --color-text-secondary: #71767B;
+  --color-scrollbar-track: #192734;
+  --color-scrollbar-thumb: #38444D;
+  --color-scrollbar-thumb-hover: #4a5055;
+}
+
+
+body {
+  @apply bg-bg-primary text-text-primary;
+}
+
+/* For Webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-scrollbar-thumb-hover);
+}
